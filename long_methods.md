@@ -75,4 +75,4 @@ The players (PLAYERS) command requests the server to list all players or the pla
 
 #### Syntax
 
-`PLAYERS !{ALL|[exts]}`
+`PLAYERS !{ALL|[exts]}
