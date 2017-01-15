@@ -1,4 +1,4 @@
-# Extension CHALLENGES
+# Extension CHAT
 
 ## Syntax defenitions
 
@@ -9,7 +9,7 @@
 - `<argument>` Optional argument
 
 
-The CHALLENGES extension has the following format:
+The CHAT extension has the following format:
 
 
 ## Client -> Server
