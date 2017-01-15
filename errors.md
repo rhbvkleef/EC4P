@@ -56,3 +56,7 @@ The use of this method is not allowed at this moment.
 ### User already connected (190)
 
 A user with the same name is already connected.
+
+### extension does not support (020)
+
+The extension does not exist and therefore cannot be applied (all extensions)
