@@ -16,3 +16,7 @@ Information about extensions can be found in the following files:
 - Extension 0: challenge.md
 - Extension 1: chat.md
 - Extension 2: leaderboard.md
+
+## Examples
+
+Example networking flows can be found in: examples.md
