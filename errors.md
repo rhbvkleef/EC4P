@@ -13,6 +13,9 @@ Second digit:
 - 0 Internal and general errors
 - 1 Networking and communications errors
 - 2 Game errors
+- 3 Errors for challenging extension
+- 4 Errors for chat extension
+- 5 Errors for leaderboard extension
 - 9 Other
 
 The third digit is used as an identifier.
@@ -60,3 +63,8 @@ A user with the same name is already connected.
 ### extension does not support (020)
 
 The extension does not exist and therefore cannot be applied (all extensions)
+
+### user does not support required extension (191)
+
+The remote user does not use the extension, and therefore the method that was called cannot continue
+

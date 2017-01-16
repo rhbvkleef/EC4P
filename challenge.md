@@ -8,10 +8,6 @@
 - `{argument|argument}`: Choice between arguments
 - `<argument>` Optional argument
 
-
-The CHALLENGES extension has the following format:
-
-
 ## Client -> Server
 
 ### Request
@@ -22,6 +18,10 @@ The request (CHALLENGE REQUEST) method requests a challenge with a specific play
 
  CHALLENGE REQUEST !name`
 
+#### Examples
+
+`CHALLENGE REQUEST bob`: Requests a challenge with bob.
+
 ### Confirm
 
 The confirm (CHALLENGE CONFIRM) confirms a challenge request. This requiest needs to have happened in order to confirm.
@@ -30,6 +30,10 @@ The confirm (CHALLENGE CONFIRM) confirms a challenge request. This requiest need
 
 `CHALLENGE CONFIRM !name`
 
+#### Examples
+
+`CHALLENGE CONFIRM peter`: Confirms the client wishes to accept the challenge from peter
+
 ### Deny
 
 The deny (CHALLENGE DENY) method denies a challenge request.
@@ -37,6 +41,10 @@ The deny (CHALLENGE DENY) method denies a challenge request.
 #### Syntax
 
 `CHALLENGE DENY !name`
+
+#### Examples
+
+`CHALLENGE DENY hans`: The client wishes not to play with hans.
 
 ## Server -> Client
 
@@ -48,6 +56,10 @@ The request (CHALLENGE REQUEST) method notifies the client a challenge request h
 
 `CHALLENGE REQUEST !name`
 
+#### Examples
+
+ CHALLENGE REQUEST peter`: Peter has requested to start a game with to whomever this message is sent.
+
 ### Deny
 
 The deny (CHALLENGE DENY) method notifies the client that made a challenge request that the request was denied.
@@ -56,3 +68,6 @@ The deny (CHALLENGE DENY) method notifies the client that made a challenge reque
 
 `CHALLENGE DENY !name`
 
+#### Examples
+
+`CHALLENGE DENY hans`: Hans denied playing with the person to whomever this message is sent.
