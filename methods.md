@@ -36,21 +36,6 @@ The disconnect (DISCONNECT) method signals the server that the client will close
 
 `DISCONNECT`
 
-### Game pause
-
-The game gets paused for an certain amount of time, the client must assign a time value to the time-out command
-#### Time in miliseconds
-
-#### Syntax
-
-'GAME PAUSE <amount> !name !time'
-
-#### Examples
-
-'GAME PAUSE ALL hans patrick johan lars 350'
-
-'GAME PAUSE 2 hans peter 200'
-
 ### Game ready
 
 The game ready (GAME READY) method signals the server the client is ready to accept a random game to be assigned. The server is not required to respond immediately after this method.
@@ -151,13 +136,13 @@ The game move (GAME MOVE) command is a broadcast command that lets every player 
 
 #### Syntax
 
-`GAME BROADCAST_MOVE !current !x !y <next>`
+`GAME MOVE !current !x !y <next>`
 
 #### Examples
 
-GAME BROADCAST_MOVE bob 2 0 hans`: Bob has made a move at (2, 0) it is Hans' turn now.
+`GAME MOVE bob 2 0 hans`: Bob has made a move at (2, 0) it is Hans' turn now.
 
-GAME BROADCAST_MOVE hans 2 2`: Hans has made a move at (2, 2) and it is the final move of this game.
+`GAME MOVE hans 2 2`: Hans has made a move at (2, 2) and it is the final move of this game.
 
 ### Game end
 
@@ -172,8 +157,6 @@ The game end (GAME END) command is used to signal the end of the game, along wit
 `GAME END PLAYER hans`: Hans has won the game
 
 `GAME END DRAW`: The game ended in a draw
-
-`GAME END DISCONNECT`: The game ended due to disconnection of a player
 
 ### Players
 
@@ -197,33 +180,3 @@ The error (ERROR) command signals a server error. More information can be found 
 
 `ERROR !code`
 
-#### Command end
-
-The command will and and return to "normal"
-### Character "|" defines an OR case in example 1
-
-#### Syntax
-
-'COMMAND END ![coms\*] ![name\*]'
-
-#### Examples
-
-'COMMAND END ALL READY | UNREADY hans peter diederik frank'
-
-'COMMAND END READY hans'
-
-#### Command restart
-
-The command will restart (in case of system failure)
-
-#### Syntax
-
-COMMAND RESTART <amount_coms> ![coms] !name
-
-#### Examples
-
-'COMMAND RESTART ALL READY hans peter frank henk patrick' : Command ALL = ready will be send again
-
-'COMMAND RESTART UNREADY hans': command hans = unready will be send again
-
-#### CHAT

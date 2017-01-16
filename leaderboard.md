@@ -14,22 +14,21 @@ The LEADERBOARD extension has the following format:
 
 ## Client -> Server
 
-#### Request
+#### User
 
-Requests the leaderboard position
+The user (LEADERBOARD USER) command requests a list of scores for the given user.
 
 #### Syntax
 
-'USER !user'
-
+'LEADERBOARD USER !user'
 
 ## Server -> Client
 
 #### Request
 
-Request an extention
+The list (LEADERBOARD LIST) command returns a list of users, and for each user a list of scores. The same syntax may be used when returning a single user in response to a client LEADERBOARD USER request.
 
 #### Syntax
 
-'LIST [!user ![scores]]'
+'LEADERBOARD LIST [!user ![scores]]'
 

@@ -8,52 +8,41 @@
 - `{argument|argument}`: Choice between arguments
 - `<argument>` Optional argument
 
-
-The CHAT extension has the following format:
-
-
 ## Client -> Server
 
-#### Message
+### Message
 
-global message to everyone on the current server
-
-#### Syntax
-
-'MESSAGE !{num | GLOBAL | GAME} !message': a global message to everyone on the server
-
-#### Get
-
-Requests a user (name)
+The message (CHAT MESSAGE) command sends a message to a user or to a certain server group
 
 #### Syntax
 
-'USER !GET !name'
+`CHAT MESSAGE !{num | GLOBAL | GAME} !message`
 
+### User
+
+The user (CHAT USER) command requests information about a specific user
+
+#### Syntax
+
+`CHAT USER !GET !name`
 
 ## Server -> Client
 
-#### Request
+### Message
 
-Request an extention
-
-#### Syntax
-
-'MESSAGE { GLOBAL | GAME | num } !user !message'
-
-#### User Num
-
-sends user and extension
+The message (CHAT MESSAGE) command sends a chat message to a client. It also tells the client who sent it and in what kind of chat.
 
 #### Syntax
 
-'USER !num ![exts]'
+`CHAT MESSAGE { GLOBAL | GAME | PRIVATE } !user !message`
 
-#### User Specific
+#### User
 
-gets specific data user
+The user (CHAT USER) command returns information about a specific user, like his status along with a list of extensions and his user number.
+
+The status is a string: INGAME, ONLINE, OFFLINE, NOTFOUND, OTHER.
 
 #### Syntax
 
-'USER !name !num !status ![exts]'
+`CHAT USER !num ![exts] !status`
 
