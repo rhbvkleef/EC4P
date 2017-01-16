@@ -14,56 +14,45 @@ The CHALLENGES extension has the following format:
 
 ## Client -> Server
 
-#### Request
+### Request
 
-Request an extention
-
-#### Syntax
-
-'REQUEST !exts_name !name': requires extension name and name of the player
-
-
-#### Confirm
-
-Confirms a request
+The request (CHALLENGE REQUEST) method requests a challenge with a specific player.
 
 #### Syntax
 
-'CONFIRM !exts_name !name': confirms player has this specific extension
+ CHALLENGE REQUEST !name`
 
-#### Deny
+### Confirm
 
-Denies a request
+The confirm (CHALLENGE CONFIRM) confirms a challenge request. This requiest needs to have happened in order to confirm.
 
 #### Syntax
 
-'DENY !exts_name !name': denies player has this specific extension
+`CHALLENGE CONFIRM !name`
 
+### Deny
 
+The deny (CHALLENGE DENY) method denies a challenge request.
+
+#### Syntax
+
+`CHALLENGE DENY !name`
 
 ## Server -> Client
 
-#### Request
+### Request
 
-Request an extention
-
-#### Syntax
-
-'REQUEST !name !exts_name': process request
-
-#### Confirm
-
-Confirms a request
+The request (CHALLENGE REQUEST) method notifies the client a challenge request has been made.
 
 #### Syntax
 
-'CONFIRM !exts_name !name': process aceptation
+`CHALLENGE REQUEST !name`
 
-#### Deny
+### Deny
 
-Denies a request
+The deny (CHALLENGE DENY) method notifies the client that made a challenge request that the request was denied.
 
 #### Syntax
 
-'DENY !exts_name !name': process deny
+`CHALLENGE DENY !name`
 
