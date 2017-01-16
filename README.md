@@ -13,6 +13,6 @@ The error codes can be found in errors.md
 
 Information about extensions can be found in the following files:
 
-Extension 0: challenge.md
-Extension 1: chat.md
-Extension 2: leaderboard.md
+- Extension 0: challenge.md
+- Extension 1: chat.md
+- Extension 2: leaderboard.md
