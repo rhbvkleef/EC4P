@@ -28,11 +28,11 @@ The user (CHAT USER) command requests information about a specific user
 
 #### Syntax
 
-`CHAT USER GET !name`
+`CHAT USER !name`
 
 #### Examples
 
-`CHAT USER GET hans`: The client requests information about user hans.
+`CHAT USER hans`: The client requests information about user hans.
 
 ## Server -> Client
 
