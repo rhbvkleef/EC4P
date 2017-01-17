@@ -1,6 +1,6 @@
 # Extension CHAT
 
-## Syntax defenitions
+## Syntax definitions
 
 - `!argument`: required
 - `[arguments]`: list of arguments, __not__ space separated

@@ -1,6 +1,6 @@
 # Extension LEADERBOARD
 
-## Syntax defenitions
+## Syntax definitions
 
 - `!argument`: required
 - `[arguments]`: list of arguments, __not__ space separated
@@ -14,7 +14,7 @@ The LEADERBOARD extension has the following format:
 
 ## Client -> Server
 
-#### User
+### User
 
 The user (LEADERBOARD USER) command requests a list of scores for the given user.
 
@@ -36,7 +36,7 @@ The all (LEADERBOARD ALL) command lists all users and their scores
 
 ## Server -> Client
 
-### Request
+### List
 
 The list (LEADERBOARD LIST) command returns a list of users, and for each user a list of scores. The same syntax may be used when returning a single user in response to a client LEADERBOARD USER request.
 
