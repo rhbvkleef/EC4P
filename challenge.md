@@ -1,6 +1,6 @@
 # Extension CHALLENGES
 
-## Syntax defenitions
+## Syntax definitions
 
 - `!argument`: required
 - `[arguments]`: list of arguments, __not__ space separated
@@ -24,7 +24,7 @@ The request (CHALLENGE REQUEST) method requests a challenge with a specific play
 
 ### Confirm
 
-The confirm (CHALLENGE CONFIRM) confirms a challenge request. This requiest needs to have happened in order to confirm.
+The confirm (CHALLENGE CONFIRM) confirms a challenge request. This request needs to have happened in order to confirm.
 
 #### Syntax
 

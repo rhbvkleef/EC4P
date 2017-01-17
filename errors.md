@@ -62,9 +62,9 @@ A user with the same name is already connected.
 
 ### extension does not support (020)
 
-The extension does not exist and therefore cannot be applied (all extensions)
+The extension does not exist and therefore cannot be applied (all extensions).
 
 ### user does not support required extension (191)
 
-The remote user does not use the extension, and therefore the method that was called cannot continue
+The remote user does not use the extension, and therefore the method that was called cannot continue.
 
