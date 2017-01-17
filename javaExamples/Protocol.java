@@ -12,7 +12,7 @@ public interface Protocol {
      * Example: <code>CONNECT stevejobs 01</code>
      * Or: <code>CONNECT hans</code>
      */
-    public static String CONNECT = "CONNECT %d";
+    public static String CONNECT = "CONNECT %s %s";
 
     /**
      * Disconnect this client.
@@ -46,7 +46,7 @@ public interface Protocol {
      * Requests list of players with certain extensions.
      * Example: <code>PLAYERS 012</code>: Request players with extensions 0, 1 AND 2 installed.
      */
-    public static String ASK_PLAYERS_EXT = "PLAYERS %d";
+    public static String ASK_PLAYERS_EXT = "PLAYERS %s";
 
     // All Server -> Client communication
 
@@ -92,7 +92,7 @@ public interface Protocol {
      * LAST ARGUMENT CAN BE MULTIPLE NAMES.
      * Example: <code>PLAYERS 0 hans</code>: Of people on the server, only hans supports extension 0.
      */
-    public static String RES_PLAYERS_EXT =  "PLAYERS %d %s";
+    public static String RES_PLAYERS_EXT =  "PLAYERS %s %s";
 
 
 
