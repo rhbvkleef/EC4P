@@ -94,7 +94,23 @@ public interface Protocol {
      */
     public static final String RES_PLAYERS_EXT =  "PLAYERS %s %s";
 
+    public enum Error {
+        // General errors
+        INTERNAL_ERROR("000"),
+        UNKNOWN_METHOD("010"),
+        ILLEGAL_SYNTAX("011"),
+        TIMEOUT("012"),
 
+        // Server errors
+        ILLEGAL_MOVE("120"),
+        PLAYER_DISCONNECT("110"),
+        ILLEGAL_METHOD_USE("111"),
+        USER_ALREADY_CONNECTED("190"),
+        USER_NOSUPPORT_EXTENSION("191");
 
-
+        public final String code;
+        public Error(String code) {
+            this.code = code;
+        }
+    }
 }
