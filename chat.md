@@ -46,7 +46,7 @@ The message (CHAT MESSAGE) command sends a chat message to a client. It also tel
 
 #### Examples
 
-`CHAT MESSAGE GOBAL 2 Hello!`: User #2 has sent the message hello in global chat
+`CHAT MESSAGE GOBAL hans Hello!`: User hans has sent the message hello in global chat
 
 ### User
 
