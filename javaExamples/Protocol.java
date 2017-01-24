@@ -100,6 +100,7 @@ public interface Protocol {
         UNKNOWN_METHOD("010"),
         ILLEGAL_SYNTAX("011"),
         TIMEOUT("012"),
+        EXTENSION_NOT_EXSISTING("020"),
 
         // Server errors
         ILLEGAL_MOVE("120"),
