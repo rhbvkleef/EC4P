@@ -16,11 +16,11 @@ The message (CHAT MESSAGE) command sends a message to a user or to a certain ser
 
 #### Syntax
 
-`CHAT MESSAGE !{num | GLOBAL | GAME} !message`
+`CHAT MESSAGE !{GLOBAL | GAME | PRIVATE !name} !message`
 
 #### Examples
 
-`CHAT MESSAGE 2 Hello`: The message "Hello" is sent to player #2.
+`CHAT MESSAGE PRIVATE hans Hello`: The message "Hello" is sent to hans.
 
 ### User
 
@@ -56,9 +56,9 @@ The status is a string: INGAME, ONLINE, OFFLINE, NOTFOUND, OTHER.
 
 #### Syntax
 
-`CHAT USER !name !num ![exts] !status`
+`CHAT USER !name ![exts] !status`
 
 #### Examples
 
-`CHAT USER hans 2 012 ONLINE`: Hans has user ID 2 and has extensions 0, 1 and 2. He has the status ONLINE.
+`CHAT USER hans 012 ONLINE`: Hans has extensions 0, 1 and 2. He has the status ONLINE.
 
