@@ -55,7 +55,7 @@ The game unready (GAME UNREADY) method signals the server that the client may no
 #### Syntax
 
 `GAME UNREADY`
-
+    
 ### Game move
 
 The game move (GAME MOVE) method may only be called while the client is in a game and it is his turn. This command tells the server the X and Y coordinates he wishes a playpiece may be placed. These coordinates, in the minimum implementation of this protocol, range from 0-3. The Z-coordinate is derived automattically by the state of the board.
